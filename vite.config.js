@@ -4,6 +4,11 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/sw-dev-test02/',
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
   resolve: {
     alias: {
       '@assets': path.resolve(__dirname, './assets'),
